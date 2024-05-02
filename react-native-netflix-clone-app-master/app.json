@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Flicklify",
+    "slug": "flicklify",
+    "privacy": "public",
+    "description": "Movie Streaming Application",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./app/assets/splash-screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./app/assets/notification-logo.png",
+          "color": "#121212",
+          "sounds": [
+            "./app/assets/iphone.wav"
+          ],
+          "mode": "production"
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "app/assets/*"
+    ],
+    "ios": {
+      "userInterfaceStyle": "dark",
+      "supportsTablet": true,
+      "requireFullScreen": true
+    },
+    "android": {
+      "userInterfaceStyle": "dark",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "package": "com.flicklifyorg.flicklify",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    }
+  }
+}
